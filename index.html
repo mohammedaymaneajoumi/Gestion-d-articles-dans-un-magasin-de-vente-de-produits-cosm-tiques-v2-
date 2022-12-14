@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Beauté du Nord</h1>
+        <nav>
+            <ul>
+                <a href="#hom">Home </a>
+                <a href="#far">Formulaire à remplir</a>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+                <fieldset>
+                    <!-- <legend>Formulaire à remplir</legend> -->
+                    <h2 id="far" >Formulaire à remplir</h2>
+                    <form id="form1">
+                        <!-- <label for="Nom">Nom</label> --> 
+                        <input type="text" id="nom" placeholder="nom">
+                        <P id="NomAffich"></P>
+                        <select id="marque">
+                            <option value="" >Select une marque</option>
+                            <option value="Dior">Dior</option>
+                            <option value="Gucci">Gucci</option>
+                            <option value="Oriflame">Oriflame</option>
+                            <option value="Channel">Channel</option>
+                        </select>
+                        <p id="select1Affich"></p>
+                        <input type="number" id="prix" placeholder=" prix">
+                        <P id="prixAffich"></P>
+                        <input type="date" id="date" placeholder="Sa date de production">
+                        <p id="dateAffich"></p>
+                        <select id="AdType">
+                            <option value="">type</option>
+                            <option value="Hygiène et toilette">Hygiène et toilette</option>
+                            <option value="Soins esthétiques">Soins esthétiques</option>
+                            <option value="Produits solaires">Produits solaires</option>
+                            <option value="Beauté des mains et des pieds">Beauté des mains et des pieds</option>
+                            <option value="Produits de maquillage">Produits de maquillage</option>
+                            <option value="Entretien capillaires">Entretien capillaires</option>
+                            <option value="Parfums">Parfums</option>
+                        </select>
+                        <p id="typeAffich"></p>
+                    </form>
+                    <p id="text2">Est en promotion:</p>
+                    <div class="promotion">
+                        <div class="promotion-radio">
+                            <label class="help-bl" for="">Promotion :</label>
+                            <label class="help-radio" for="">Oui :</label>
+                            <input name="radio"  value="oui"  type="radio" id="radio-promotion-1">
+                            <label class="help-radio" for="">Non :</label>
+                            <input name="radio" value="Non" type="radio" id="radio-promotion-2">
+                        </div>
+                        <p id="cate"></p>
+                        <p id="error-6"></p>
+                        <button  id="submit">Create</button>
+                    <!-- <button onclick="ModProduct()"  id="btnModifier">Modifier</button> -->
+                    <div class="titre"><p>GESTION DE STOCK</p></div>
+                    <table id="Table" border="1">
+                        <tr>
+                            <th>le Nom</th>
+                            <th>la Marque</th>
+                            <th>le prix</th>
+                            <th>la date de production</th>
+                            <th>le type</th>
+                            <th>est-il en promotion (oui,non)</th>
+                            <th>action</th>
+                        </tr>
+                    <tbody id="tbody">
+                        
+                    </tbody>
+                    </table>
+                </fieldset>
+                <img src="img/53880710_l.jpg" alt="53880710_l.jpg">
+        </section>
+    </main>
+    <script src="cosmetiquev2.js"></script>
+</body>
+</html>
